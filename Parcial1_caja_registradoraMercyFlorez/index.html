@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAJA REGISTRADORA</title>
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<main class="contenedor-principal">
+    <header>
+        <h1>CAJA REGISTRADORA CAQUETA CITY</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Producto</h2>
+            <select id="product-select">
+                <option value="producto1">Selecciona</option>
+                <option value="15000">Shampoo Dove $15.000</option>
+                <option value="20000">Crema Facial Neutrogena $20.000</option>
+                <option value="10000">Esmalte de Uñas Sally Hansen $10.000</option>
+                <option value="50000">Perfume Carolina Herrera $50.000</option>
+                <option value="8000">Labial Maybelline $8.000</option>
+            </select>
+            <div class="product-list"></div>
+        </article>
+        <article>
+            <h2>Compra</h2>
+            <form>
+                <fieldset>
+                    <legend>Información del Producto</legend>
+                    <label for="producto">Producto:</label>
+                    <input type="text" id="producto" name="producto">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad">
+                </fieldset>
+                <button type="submit">Comprar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </article>
+        <div class="factura-container">
+            <h2 class="factura-title">Factura</h2>
+            <ul class="factura-list">TOTAL:</ul>
+        </div>
+    </section>
+</main>
+<script src="./JS/main.js"></script>
+</body>
+
+</html>
